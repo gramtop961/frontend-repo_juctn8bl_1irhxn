@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" data-accent="black">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products • SportyLite</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/sporty-lite.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .filters .btn { border-radius: 999px; }
+    .filters .btn.active { background: var(--accent); color: #fff; }
+  </style>
+</head>
+<body data-page="products">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-sporty border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/sporty-lite/home.html"><span class="text-primary">Sporty</span>Lite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="/sporty-lite/home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sporty-lite/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sporty-lite/services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" data-page="products" href="/sporty-lite/products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sporty-lite/pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sporty-lite/terms.html">Terms</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sporty-lite/privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" style="padding-top:110px">
+    <section class="container py-5">
+      <h1 class="display-6 fw-bold reveal-slide">Products</h1>
+      <p class="lead text-soft reveal">Explore our full catalog – optimized for performance across disciplines.</p>
+    </section>
+  </header>
+
+  <!-- Filters -->
+  <section class="container py-3">
+    <div class="d-flex flex-wrap gap-2 filters">
+      <button class="btn btn-outline active" data-filter="all">All</button>
+      <button class="btn btn-outline" data-filter="Cricket">Cricket</button>
+      <button class="btn btn-outline" data-filter="Football">Football</button>
+      <button class="btn btn-outline" data-filter="Badminton">Badminton</button>
+      <button class="btn btn-outline" data-filter="Fitness">Fitness</button>
+      <button class="btn btn-outline" data-filter="Accessories">Accessories</button>
+    </div>
+  </section>
+
+  <section class="container py-4">
+    <div class="row g-4" id="productGrid">
+      <!-- 8 sample product cards -->
+      <div class="col-12 col-sm-6 col-lg-3 product" data-category="Football">
+        <div class="card-sporty product-card position-relative reveal-zoom">
+          <img src="https://images.unsplash.com/photo-1486286701208-1d58e9338013?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxGb290YmFsbHxlbnwwfDB8fHwxNzYzMTA2MTQwfDA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80" alt="Football" class="w-100">
+          <div class="p-3">
+            <h6 class="mb-1">Match Football</h6>
+            <small class="text-soft">Football</small>
+          </div>
+          <div class="product-meta"><div class="fw-semibold">$49</div><small>In stock</small></div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 product" data-category="Cricket">
+        <div class="card-sporty product-card position-relative reveal-zoom">
+          <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=800&auto=format&fit=crop" alt="Cricket Bat" class="w-100">
+          <div class="p-3">
+            <h6 class="mb-1">Willow Bat</h6>
+            <small class="text-soft">Cricket</small>
+          </div>
+          <div class="product-meta"><div class="fw-semibold">$179</div><small>Limited</small></div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 product" data-category="Badminton">
+        <div class="card-sporty product-card position-relative reveal-zoom">
+          <img src="https://images.unsplash.com/photo-1552072092-7f9b8d63efcb?q=80&w=800&auto=format&fit=crop" alt="Racket" class="w-100">
+          <div class="p-3">
+            <h6 class="mb-1">Carbon Racket</h6>
+            <small class="text-soft">Badminton</small>
+          </div>
+          <div class="product-meta"><div class="fw-semibold">$99</div><small>Hot</small></div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 product" data-category="Fitness">
+        <div class="card-sporty product-card position-relative reveal-zoom">
+          <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?q=80&w=800&auto=format&fit=crop" alt="Dumbbells" class="w-100">
+          <div class="p-3">
+            <h6 class="mb-1">Dumbbell Set</h6>
+            <small class="text-soft">Fitness</small>
+          </div>
+          <div class="product-meta"><div class="fw-semibold">$129</div><small>New</small></div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 product" data-category="Accessories">
+        <div class="card-sporty product-card position-relative reveal-zoom">
+          <img src="https://images.unsplash.com/photo-1617118602199-d3c05ae37ed8?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxHbG92ZXN8ZW58MHwwfHx8MTc2MzEwNjE0MXww&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80" alt="Gloves" class="w-100">
+          <div class="p-3">
+            <h6 class="mb-1">Grip Gloves</h6>
+            <small class="text-soft">Accessories</small>
+          </div>
+          <div class="product-meta"><div class="fw-semibold">$29</div><small>In stock</small></div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 product" data-category="Football">
+        <div class="card-sporty product-card position-relative reveal-zoom">
+          <img src="https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxCb290c3xlbnwwfDB8fHwxNzYzMTA2MTQxfDA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80" alt="Boots" class="w-100">
+          <div class="p-3">
+            <h6 class="mb-1">Speed Boots</h6>
+            <small class="text-soft">Football</small>
+          </div>
+          <div class="product-meta"><div class="fw-semibold">$149</div><small>Best seller</small></div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 product" data-category="Cricket">
+        <div class="card-sporty product-card position-relative reveal-zoom">
+          <img src="https://images.unsplash.com/photo-1617118602199-d3c05ae37ed8?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxHbG92ZXN8ZW58MHwwfHx8MTc2MzEwNjE0MXww&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80" alt="Gloves" class="w-100">
+          <div class="p-3">
+            <h6 class="mb-1">Batting Gloves</h6>
+            <small class="text-soft">Cricket</small>
+          </div>
+          <div class="product-meta"><div class="fw-semibold">$39</div><small>Comfort fit</small></div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 product" data-category="Fitness">
+        <div class="card-sporty product-card position-relative reveal-zoom">
+          <img src="https://images.unsplash.com/photo-1632077804406-188472f1a810?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxLZXR0bGViZWxsfGVufDB8MHx8fDE3NjMxMDYxNDJ8MA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80" alt="Kettlebell" class="w-100">
+          <div class="p-3">
+            <h6 class="mb-1">Kettlebell</h6>
+            <small class="text-soft">Fitness</small>
+          </div>
+          <div class="product-meta"><div class="fw-semibold">$59</div><small>Top pick</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer py-4 mt-5">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3">
+      <div class="d-flex align-items-center gap-2">
+        <svg width="18" height="18" class="text-dark"><use href="/icons/sporty-icons.svg#icon-ball"/></svg>
+        <small class="text-soft">© 2025 SportyLite. All rights reserved.</small>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" aria-label="Facebook"><svg width="18" height="18"><use href="/icons/sporty-icons.svg#icon-facebook"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg width="18" height="18"><use href="/icons/sporty-icons.svg#icon-twitter"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="18" height="18"><use href="/icons/sporty-icons.svg#icon-instagram"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top"><svg width="18" height="18"><use href="/icons/sporty-icons.svg#icon-ball"/></svg></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/sporty-lite.js"></script>
+  <script>
+    // Simple client-side filter
+    const buttons = document.querySelectorAll('[data-filter]');
+    const cards = document.querySelectorAll('#productGrid .product');
+    buttons.forEach(btn => btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const category = btn.dataset.filter;
+      cards.forEach(card => {
+        const show = category === 'all' || card.dataset.category === category;
+        card.style.display = show ? '' : 'none';
+      });
+    }));
+  </script>
+</body>
+</html>

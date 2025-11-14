@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en" data-accent="blue">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SportyLite – Premium Sports Equipment</title>
+  <meta name="description" content="Modern, responsive sports equipment – football, cricket, badminton, fitness gear. Premium quality with great service." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="/sporty-lite.css" rel="stylesheet">
+  <style> body{ --accent: var(--blue);} </style>
+</head>
+<body data-page="home">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-sporty border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/sporty-lite/home.html">
+        <span class="text-primary">Sporty</span>Lite
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" data-page="home" href="/sporty-lite/home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sporty-lite/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sporty-lite/services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sporty-lite/products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sporty-lite/pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sporty-lite/terms.html">Terms</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sporty-lite/privacy.html">Privacy</a></li>
+        </ul>
+        <a class="btn btn-sporty ms-lg-3" href="#featured">Shop Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero pt-6" style="padding-top:100px">
+    <section class="container py-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="badge-sporty reveal">Premium Quality • Fast Delivery</span>
+          <h1 class="display-5 fw-bold mt-3 mb-3 reveal-slide">Gear up for victory</h1>
+          <p class="lead text-soft mb-4 reveal">Top-tier sports equipment for football, cricket, badminton, and fitness. Built to perform, designed to last.</p>
+          <div class="d-flex gap-2 reveal-zoom">
+            <a href="#featured" class="btn btn-sporty">Browse Featured</a>
+            <a href="/sporty-lite/products.html" class="btn btn-sporty btn-outline">View All Products</a>
+          </div>
+          <div class="d-flex align-items-center gap-3 mt-4 reveal">
+            <svg width="20" height="20" class="text-success"><use href="/icons/sporty-icons.svg#icon-trophy"/></svg>
+            <small class="text-soft">Trusted by 20k+ athletes and teams</small>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-illustration reveal-zoom">
+          <div class="position-relative rounded-xl overflow-hidden shadow-soft">
+            <img src="https://images.unsplash.com/photo-1762860798875-415e25cf8a5b?ixid=M3w3OTkxMTl8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjMxMDYxMzl8&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80" class="rounded-xl" alt="Sports equipment hero"/>
+            <div class="product-meta" style="position:absolute;left:16px;bottom:16px;right:16px;border-radius:12px;background:rgba(17,24,39,.7)">
+              <div class="d-flex align-items-center gap-2 text-white">
+                <svg width="18" height="18"><use href="/icons/sporty-icons.svg#icon-cart"/></svg>
+                <small>Hand-picked kits for every sport</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- Featured Products -->
+  <section id="featured" class="container py-5">
+    <div class="d-flex justify-content-between align-items-end mb-3">
+      <h2 class="h3 fw-bold reveal">Featured Products</h2>
+      <a class="text-decoration-none" href="/sporty-lite/products.html">See all</a>
+    </div>
+    <div class="row g-4">
+      <!-- Product card template repeated -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card-sporty product-card position-relative reveal-zoom">
+          <img src="https://images.unsplash.com/photo-1486286701208-1d58e9338013?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxGb290YmFsbHxlbnwwfDB8fHwxNzYzMTA2MTQwfDA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80" alt="Football" class="w-100">
+          <div class="p-3">
+            <h6 class="mb-1">Pro Football</h6>
+            <small class="text-soft">Match quality</small>
+          </div>
+          <div class="product-meta">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <div class="fw-semibold">$59</div>
+                <small>Free 2-day shipping</small>
+              </div>
+              <a class="btn btn-sporty btn-sm" href="#">Add</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card-sporty product-card position-relative reveal-zoom">
+          <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=800&auto=format&fit=crop" alt="Cricket bat" class="w-100">
+          <div class="p-3">
+            <h6 class="mb-1">Elite Cricket Bat</h6>
+            <small class="text-soft">English willow</small>
+          </div>
+          <div class="product-meta">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <div class="fw-semibold">$199</div>
+                <small>Durable and balanced</small>
+              </div>
+              <a class="btn btn-orange btn-sporty btn-sm" href="#">Add</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card-sporty product-card position-relative reveal-zoom">
+          <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?q=80&w=800&auto=format&fit=crop" alt="Dumbbells" class="w-100">
+          <div class="p-3">
+            <h6 class="mb-1">Hex Dumbbells</h6>
+            <small class="text-soft">Pairs from 5–50lb</small>
+          </div>
+          <div class="product-meta">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <div class="fw-semibold">$129</div>
+                <small>Anti-roll, ergonomic</small>
+              </div>
+              <a class="btn btn-green btn-sporty btn-sm" href="#">Add</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card-sporty product-card position-relative reveal-zoom">
+          <img src="https://images.unsplash.com/photo-1552072092-7f9b8d63efcb?q=80&w=800&auto=format&fit=crop" alt="Badminton racket" class="w-100">
+          <div class="p-3">
+            <h6 class="mb-1">Featherlight Racket</h6>
+            <small class="text-soft">Speed & control</small>
+          </div>
+          <div class="product-meta">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <div class="fw-semibold">$89</div>
+                <small>Stringing included</small>
+              </div>
+              <a class="btn btn-dark btn-sporty btn-sm" href="#">Add</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Services Overview -->
+  <section class="container py-5">
+    <div class="row g-4">
+      <div class="col-lg-3 col-sm-6">
+        <div class="card-sporty p-4 reveal">
+          <div class="icon icon-blue mb-3">
+            <svg width="22" height="22"><use href="/icons/sporty-icons.svg#icon-dumbbell"/></svg>
+          </div>
+          <h6 class="mb-1">Gym Setup</h6>
+          <small class="text-soft">End-to-end planning and installation for home and commercial gyms.</small>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card-sporty p-4 reveal">
+          <div class="icon icon-green mb-3">
+            <svg width="22" height="22"><use href="/icons/sporty-icons.svg#icon-racket"/></svg>
+          </div>
+          <h6 class="mb-1">Gear Customization</h6>
+          <small class="text-soft">Personalized names, numbers, and team colors on your equipment.</small>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card-sporty p-4 reveal">
+          <div class="icon icon-orange mb-3">
+            <svg width="22" height="22"><use href="/icons/sporty-icons.svg#icon-whistle"/></svg>
+          </div>
+          <h6 class="mb-1">Equipment Repair</h6>
+          <small class="text-soft">Stringing, re-gripping, re-lacing, and structural fixes by pros.</small>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card-sporty p-4 reveal">
+          <div class="icon icon-black mb-3">
+            <svg width="22" height="22"><use href="/icons/sporty-icons.svg#icon-ball"/></svg>
+          </div>
+          <h6 class="mb-1">Bulk Supply</h6>
+          <small class="text-soft">Team and institution packages with volume pricing.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Testimonials Slider -->
+  <section class="container py-5" data-slider>
+    <div class="d-flex justify-content-between align-items-end mb-3">
+      <h2 class="h3 fw-bold">What athletes say</h2>
+      <div class="d-flex gap-2">
+        <button class="btn btn-outline btn-sporty btn-sm" data-prev>&larr;</button>
+        <button class="btn btn-sporty btn-sm" data-next>&rarr;</button>
+      </div>
+    </div>
+    <div class="overflow-hidden rounded-xl">
+      <div class="d-flex" data-track style="transition: transform .6s ease;">
+        <div class="col-12 flex-shrink-0 p-3" data-item>
+          <div class="testimonial p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img class="rounded-circle" src="https://i.pravatar.cc/80?img=12" width="48" height="48" alt="avatar">
+              <div>
+                <div class="fw-semibold">Alex R.</div>
+                <small class="text-soft">Football coach</small>
+              </div>
+            </div>
+            <p class="mb-0">Fantastic build quality and quick delivery. Our training sessions have never been better.</p>
+          </div>
+        </div>
+        <div class="col-12 flex-shrink-0 p-3" data-item>
+          <div class="testimonial p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img class="rounded-circle" src="https://i.pravatar.cc/80?img=22" width="48" height="48" alt="avatar">
+              <div>
+                <div class="fw-semibold">Priya K.</div>
+                <small class="text-soft">Badminton athlete</small>
+              </div>
+            </div>
+            <p class="mb-0">Loved the customization service. My racket feels perfectly tuned to my style.</p>
+          </div>
+        </div>
+        <div class="col-12 flex-shrink-0 p-3" data-item>
+          <div class="testimonial p-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img class="rounded-circle" src="https://i.pravatar.cc/80?img=32" width="48" height="48" alt="avatar">
+              <div>
+                <div class="fw-semibold">Marcus W.</div>
+                <small class="text-soft">Gym owner</small>
+              </div>
+            </div>
+            <p class="mb-0">Top-notch support from planning to installation. Highly recommend the Pro plan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CTA -->
+  <section class="container py-5 text-center">
+    <h2 class="h3 fw-bold mb-2">Ready to elevate your game?</h2>
+    <p class="text-soft mb-4">Explore premium equipment tailored for performance and durability.</p>
+    <a class="btn btn-sporty btn-lg" href="/sporty-lite/products.html">Explore Products</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-4 mt-5">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3">
+      <div class="d-flex align-items-center gap-2">
+        <svg width="18" height="18" class="text-primary"><use href="/icons/sporty-icons.svg#icon-ball"/></svg>
+        <small class="text-soft">© 2025 SportyLite. All rights reserved.</small>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" aria-label="Facebook"><svg width="18" height="18"><use href="/icons/sporty-icons.svg#icon-facebook"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg width="18" height="18"><use href="/icons/sporty-icons.svg#icon-twitter"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="18" height="18"><use href="/icons/sporty-icons.svg#icon-instagram"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top"><svg width="18" height="18"><use href="/icons/sporty-icons.svg#icon-ball"/></svg></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/sporty-lite.js"></script>
+</body>
+</html>
